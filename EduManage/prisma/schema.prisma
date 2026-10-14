@@ -1,8 +1,8 @@
 generator client {
-  provider = "prisma-client"
-  output   = "../app/generated/prisma"
+  provider   = "prisma-client"
+  output     = "../app/generated/prisma"
+  engineType = "client"
 }
-
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
